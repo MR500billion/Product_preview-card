@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+:root{
+--Dark-cyan:hsl(158, 36%, 37%);
+
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%); 
+
+}
+body{
+
+
+background-color: var(--Cream);
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#desktopImg{
+    display: none;
+}
+p {
+    font-family: Montserrat, Arial, sans-serif;
+}
+h1 {
+ 
+    font-family: Fraunces, Georgia, serif;
+color: var(--Very-dark-blue);
+
+
+}
+  
+.Main-container{
+
+    background-color:white;
+
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 2.3em;
+    border-radius: 1rem;
+}
+.Main-container>img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-top-right-radius: 1rem;
+border-top-left-radius: 1rem;
+}
+
+#Text{
+
+    padding: 1em;
+}
+/* i have to include margin in order to get it to alignment*/
+#Price{
+
+    display: flex;
+    flex-direction: row;
+
+}
+    #Price>h1{
+
+        color: var(--Dark-cyan);
+    }
+
+#Price>p{
+
+        margin-top: 2em;
+        margin-left: .5em;
+        text-decoration: line-through;
+    }
+ button{
+
+    margin-bottom: 3em;
+    width: 100%;
+    height: 4.5em;
+    background-color: var(--Dark-cyan);
+    color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1em;
+font-weight: bold;
+border-radius: 1em;
+border: none;
+cursor: pointer;
+    
+ }
+
+ .Light-text{
+
+    color: var(--Dark-grayish-blue);
+ }
+
+ @media screen and (min-width:700px) {
+    
+    .Main-container{
+
+        background-color:white;
+    
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;
+        margin: 2.3em;
+        border-radius: 1rem;
+    }
+    #MobileImg{
+
+        display: none;
+    }
+    #desktopImg{
+        display: block;
+    }
+   
+    .Main-container>img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    }
+ }
